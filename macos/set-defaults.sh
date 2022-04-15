@@ -18,14 +18,14 @@ sudo nvram SystemAudioVolume=" "
 #defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Set sidebar icon size to medium
-defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
+# defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
 # Increase window resize speed for Cocoa applications
-defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+# defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 # Expand save panel by default
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+#defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+#defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
 # Expand print panel by default
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
@@ -95,7 +95,7 @@ defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Set the timezone; see `systemsetup -listtimezones` for other values
-systemsetup -settimezone "Europe/Brussels" > /dev/null
+#systemsetup -settimezone "Asia/Jakarta" > /dev/null
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -154,7 +154,7 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 # Disable the warning before emptying the Trash
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
+#defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
@@ -228,7 +228,7 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 #defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+#defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 ###############################################################################
 # Activity Monitor                                                            #
